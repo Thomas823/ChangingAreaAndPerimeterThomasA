@@ -35,6 +35,8 @@
             this.txtLengthInput = new System.Windows.Forms.TextBox();
             this.txtWidthInput = new System.Windows.Forms.TextBox();
             this.btnCalculate = new System.Windows.Forms.Button();
+            this.lblPerimeterPrompt = new System.Windows.Forms.Label();
+            this.lblAreaPrompt = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblLength
@@ -61,7 +63,7 @@
             // 
             this.lblPerimeterAnswer.AutoSize = true;
             this.lblPerimeterAnswer.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPerimeterAnswer.Location = new System.Drawing.Point(61, 184);
+            this.lblPerimeterAnswer.Location = new System.Drawing.Point(238, 187);
             this.lblPerimeterAnswer.Name = "lblPerimeterAnswer";
             this.lblPerimeterAnswer.Size = new System.Drawing.Size(0, 24);
             this.lblPerimeterAnswer.TabIndex = 2;
@@ -70,7 +72,7 @@
             // 
             this.lblAreaAnswer.AutoSize = true;
             this.lblAreaAnswer.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAreaAnswer.Location = new System.Drawing.Point(61, 231);
+            this.lblAreaAnswer.Location = new System.Drawing.Point(238, 223);
             this.lblAreaAnswer.Name = "lblAreaAnswer";
             this.lblAreaAnswer.Size = new System.Drawing.Size(0, 24);
             this.lblAreaAnswer.TabIndex = 3;
@@ -100,11 +102,33 @@
             this.btnCalculate.UseVisualStyleBackColor = true;
             this.btnCalculate.Click += new System.EventHandler(this.btnCalculate_Click);
             // 
+            // lblPerimeterPrompt
+            // 
+            this.lblPerimeterPrompt.AutoSize = true;
+            this.lblPerimeterPrompt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPerimeterPrompt.Location = new System.Drawing.Point(61, 187);
+            this.lblPerimeterPrompt.Name = "lblPerimeterPrompt";
+            this.lblPerimeterPrompt.Size = new System.Drawing.Size(158, 24);
+            this.lblPerimeterPrompt.TabIndex = 7;
+            this.lblPerimeterPrompt.Text = "The Perimeter is :";
+            // 
+            // lblAreaPrompt
+            // 
+            this.lblAreaPrompt.AutoSize = true;
+            this.lblAreaPrompt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAreaPrompt.Location = new System.Drawing.Point(61, 223);
+            this.lblAreaPrompt.Name = "lblAreaPrompt";
+            this.lblAreaPrompt.Size = new System.Drawing.Size(117, 24);
+            this.lblAreaPrompt.TabIndex = 8;
+            this.lblAreaPrompt.Text = "The Area is :";
+            // 
             // frmChangingAreaAndPerimeter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(572, 288);
+            this.Controls.Add(this.lblAreaPrompt);
+            this.Controls.Add(this.lblPerimeterPrompt);
             this.Controls.Add(this.btnCalculate);
             this.Controls.Add(this.txtWidthInput);
             this.Controls.Add(this.txtLengthInput);
@@ -128,6 +152,8 @@
         private System.Windows.Forms.TextBox txtLengthInput;
         private System.Windows.Forms.TextBox txtWidthInput;
         private System.Windows.Forms.Button btnCalculate;
+        private System.Windows.Forms.Label lblPerimeterPrompt;
+        private System.Windows.Forms.Label lblAreaPrompt;
     }
 }
 

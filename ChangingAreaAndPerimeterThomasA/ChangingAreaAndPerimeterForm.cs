@@ -26,6 +26,10 @@ namespace ChangingAreaAndPerimeterThomasA
         public frmChangingAreaAndPerimeter()
         {
             InitializeComponent();
+
+            // Hide area and perimeter prompts
+            lblPerimeterPrompt.Hide();
+            lblAreaPrompt.Hide();
         }
 
         private void btnCalculate_Click(object sender, EventArgs e)
@@ -41,6 +45,10 @@ namespace ChangingAreaAndPerimeterThomasA
             // Update answers in labels
             lblAreaAnswer.Text = Convert.ToString(area) + " squared meters";
             lblPerimeterAnswer.Text = Convert.ToString(perimeter) + " meters";
+
+            // Show area and perimeter prompts
+            lblPerimeterPrompt.Show();
+            lblAreaPrompt.Show();
         }
     }
 }
